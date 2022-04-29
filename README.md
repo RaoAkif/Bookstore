@@ -1,56 +1,49 @@
-# Project Name
+# Book Store
 
-> This repository contains Webpack Template.
+> This is a simple Bookstore application, that uses React Framework, that is a Single Page Application (SPA) as React Router, and Redux Library for State Management.
 
 
 ## Get Started
-Click on the green button **Use the Template** and Start working. Happy Coding !!!
-![image](https://user-images.githubusercontent.com/61361037/161849727-b74bc9e4-768d-4aab-9cb5-3bd6956d4b0c.png)
-
-
-- [Live Site](http://GITHUB_ID.github.io/...)
-- [Live Demo Link](https://www.loom.com/share/...)
+- [Netlify Live](https://bookstore-raoakif.netlify.app/)
+- [Heroku Live](https://bookstore-raoakif.herokuapp.com/)
 
 
 # Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
+### Prerequisites
+Node JS
+### Setup
+```
+git clone git@github.com:RaoAkif/Bookstore.git
+```
+### Install
+```
+cd Bookstore
+```
+```
+npm i
+```
 
 ### `npm start`
-
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### ```npm test```
+```
+npm test
+```
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
+### Create the Build Folder
+```
+npm run build
+```
 
 ## Authors
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/GITHUB_ID)
-- Twitter: [@twitterhandle](https://twitter.com/GITHUB_ID)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/GITHUB_ID)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
+- GitHub: [@RaoAkif](https://github.com/RaoAkif)
+- Twitter: [@RaoAkif](https://twitter.com/RaoAkif)
+- LinkedIn: [RaoAkif](https://linkedin.com/in/RaoAkif)
 
 ## 🤝 Contributing
 
@@ -71,5 +64,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
-
-
