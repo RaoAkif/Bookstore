@@ -4,13 +4,14 @@
 
 
 ## Get Started
-- [Netlify Live](https://bookstore-raoakif.netlify.app/)
-- [Heroku Live](https://bookstore-raoakif.herokuapp.com/)
+ * [Netlify Live](https://bookstore-raoakif.netlify.app/)
+ * [Heroku Live](https://bookstore-raoakif.herokuapp.com/)
 
 
 # Getting Started with Create React App
 ### Prerequisites
-Node JS
+`Node JS`
+
 ### Setup
 ```
 git clone git@github.com:RaoAkif/Bookstore.git
