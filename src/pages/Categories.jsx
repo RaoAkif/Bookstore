@@ -2,7 +2,10 @@ import React from 'react';
 
 function Categories() {
   return (
-    <div>Categories</div>
+    <div>
+      <h1>This is the Categories Page</h1>
+      <button type="button">Check status</button>
+    </div>
   );
 }
 
