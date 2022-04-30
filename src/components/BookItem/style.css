@@ -1,0 +1,84 @@
+.item {
+  /* structure */
+  width: 80%;
+  border: 1px gray;
+  display: flex;
+  justify-content: space-around;
+  /* content */
+  margin: 0.5rem;
+  background-color: white;
+  padding: 1rem;
+}
+
+.book-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45%;
+}
+
+.desc {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+h5, h3, h6, .desc, div>p {
+  margin: 0;
+}
+
+.book-details > h5 {
+  color: grey;
+}
+
+.book-details > h3 {
+  color: black;
+}
+
+.book-details > h6 {
+  color: grey;
+}
+
+.desc > p {
+  color: grey;
+  font-size: 12px;
+}
+
+.item-stats {
+  display: flex;
+  align-items: center;
+}
+
+.item-stats > img {
+  width: 3rem;
+  height: 3rem;
+  padding-right: 1rem;
+}
+
+.percentage {
+  display: flex;
+  flex-direction: column;
+}
+
+.percentage > p {
+  font-size: 12px;
+}
+
+.book-status {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book-status > p:first-child {
+  color: grey;
+  font-size: 12px;
+}
+
+.book-status > button {
+  background-color: #0290ff;
+  color: white;
+  width: 10rem;
+  height: 1.7rem;
+
+}
