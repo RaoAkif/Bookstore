@@ -8,7 +8,7 @@ function AddBook() {
       <form action="">
         <input type="text" name="Title" id="title" placeholder="Book title" />
         <select name="Category" id="category">
-          <option value="" selected disabled hidden>Category</option>
+          <option value="" defaultValue disabled hidden>Category</option>
           <option value="science">Science</option>
           <option value="arts">Arts</option>
         </select>
