@@ -13,8 +13,8 @@ const uuid = makeIdWithLength(20);
 // console.log(uuid);
 
 //
-const ADD_BOOK = 'ADD_BOOK';
-const DELETE_BOOK = 'DELETE_BOOK';
+const ADD_BOOK = 'bookstore/books/ADD_BOOK';
+const DELETE_BOOK = 'bookstore/books/DELETE_BOOK';
 
 const initialState = [];
 
