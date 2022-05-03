@@ -5,7 +5,7 @@ import {
   Route,
 } from 'react-router-dom';
 import Books from './pages/Books/Books';
-import Categories from './pages/Categories';
+import Categories from './pages/Categories/Categories';
 import Header from './components/Header/Header';
 
 function App() {
