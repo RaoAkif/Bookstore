@@ -1,7 +1,6 @@
 function makeIdWithLength(length) {
   let result = '';
-  const characters =
-    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
   const charactersLength = characters.length;
 
   for (let i = 0; i < length; i += 1) {
@@ -27,7 +26,7 @@ export default function reducer(state = initialState, action) {
       return state.filter((book) => book.id !== action.data.id);
     default:
       return state;
-  };
+  }
 }
 
 export function addBook(title = '', author = '') {
