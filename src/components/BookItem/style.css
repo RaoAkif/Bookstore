@@ -44,7 +44,7 @@ div > p {
 }
 
 .book-details > h6 {
-  color: #B4CFE6;
+  color: #b4cfe6;
   font-size: 14px;
 }
 
@@ -99,5 +99,4 @@ div > p {
   cursor: pointer;
   display: inline-block;
   color: #9bc1e2;
-  
 }
