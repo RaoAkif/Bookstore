@@ -1,17 +1,22 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
 import './style.css';
 import circularBar from '../../assets/images/circularBar.png';
+import { deleteBook } from '../../redux/books/books';
 
-function BookItem() {
+function BookItem(props) {
+  const dispatch = useDispatch();
+  const { book } = props;
   return (
     <div className="item">
       <div className="book-details">
-        <h5>Economy</h5>
-        <h3>Capital in the Twenty-First Century</h3>
-        <h6>Suzanne Collins</h6>
+        <h5>{book.category}</h5>
+        <h3>{book.title}</h3>
+        <h6>{book.author}</h6>
         <div className="desc">
           <button type="button" className="btn">Comments</button>
-          <button type="button" className="btn">Remove</button>
+          <button onClick={() => dispatch(deleteBook(book.id))} type="button" className="btn">Remove</button>
           <button type="button" className="btn">Edit</button>
         </div>
       </div>
@@ -32,3 +37,12 @@ function BookItem() {
 }
 
 export default BookItem;
+
+BookItem.propTypes = {
+  book: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    author: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+  }).isRequired,
+};

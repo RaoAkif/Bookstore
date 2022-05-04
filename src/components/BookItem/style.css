@@ -12,7 +12,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 45%;
+  width: 32%;
+}
+
+.book-details > button {
+  height: 2rem;
+  padding: 10px 7px 10px 7px;
 }
 
 .desc {
@@ -34,17 +39,18 @@ div > p {
 }
 
 .book-details > h3 {
-  color: grey;
+  color: black;
+  font-size: 20px;
 }
 
 .book-details > h6 {
   color: #B4CFE6;
-  font-size: 16px;
+  font-size: 14px;
 }
 
-.desc > p {
-  color: grey;
-  font-size: 12px;
+.desc > button {
+  color: #9bc1e2;
+  font-size: 14px;
 }
 
 .item-stats {
