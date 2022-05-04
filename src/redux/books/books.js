@@ -12,18 +12,26 @@ function makeIdWithLength(length) {
 const uuid = makeIdWithLength(20);
 // console.log(uuid);
 
-//
 const ADD_BOOK = 'bookstore/books/ADD_BOOK';
 const DELETE_BOOK = 'bookstore/books/DELETE_BOOK';
 
-const initialState = [];
+const initialState = [
+  { title: 'Book One', author: 'Author One', id: uuid },
+  { title: 'Book Two', author: 'Author Two', id: uuid },
+  { title: 'Book Three', author: 'Author Three', id: uuid },
+];
 
-export default function reducer(state = initialState, action) {
+export default function reducer(action = {}, state = initialState) {
   switch (action.type) {
     case ADD_BOOK:
-      return [...state, action.data];
+      return {
+        ...state,
+        books: [action.payload],
+      };
     case DELETE_BOOK:
-      return state.filter((book) => book.id !== action.data.id);
+      return [
+        ...state.filter((book) => book.id !== action.payload),
+      ];
     default:
       return state;
   }
@@ -33,13 +41,13 @@ export function addBook(title = '', author = '') {
   const id = uuid;
   return {
     type: ADD_BOOK,
-    data: { title, author, id },
+    payload: { title, author, id },
   };
 }
 
 export function deleteBook(id) {
   return {
     type: DELETE_BOOK,
-    id,
+    payload: id,
   };
 }

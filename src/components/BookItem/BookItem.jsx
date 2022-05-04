@@ -10,9 +10,9 @@ function BookItem() {
         <h3>Capital in the Twenty-First Century</h3>
         <h6>Suzanne Collins</h6>
         <div className="desc">
-          <p>Comments</p>
-          <p>Remove</p>
-          <p>Edit</p>
+          <button type="button" className="btn">Comments</button>
+          <button type="button" className="btn">Remove</button>
+          <button type="button" className="btn">Edit</button>
         </div>
       </div>
       <div className="item-stats">

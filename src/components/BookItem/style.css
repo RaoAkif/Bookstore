@@ -34,11 +34,12 @@ div > p {
 }
 
 .book-details > h3 {
-  color: black;
+  color: grey;
 }
 
 .book-details > h6 {
-  color: grey;
+  color: #B4CFE6;
+  font-size: 16px;
 }
 
 .desc > p {
@@ -82,4 +83,15 @@ div > p {
   color: white;
   width: 10rem;
   height: 1.7rem;
+}
+
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 0 100px 0 0;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  color: #9bc1e2;
+  
 }
