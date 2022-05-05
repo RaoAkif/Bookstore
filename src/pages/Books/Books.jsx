@@ -1,14 +1,16 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import './style.css';
 import BookItem from '../../components/BookItem/BookItem';
 import AddBook from '../../components/AddBook/AddBook';
 
 function Books() {
+  const books = useSelector((state) => state.books);
   return (
     <div className="books">
-      <BookItem />
-      <BookItem />
-      <BookItem />
+      {books.map((book) => (
+        <BookItem key={book.id} book={book} />
+      ))}
       <AddBook />
     </div>
   );

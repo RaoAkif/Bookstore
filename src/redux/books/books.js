@@ -1,39 +1,39 @@
-function makeIdWithLength(length) {
-  let result = '';
-  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-  const charactersLength = characters.length;
+import { v4 as uuidv4 } from 'uuid';
 
-  for (let i = 0; i < length; i += 1) {
-    result += characters.charAt(Math.floor(Math.random() * charactersLength));
-  }
-  return result;
-}
-
-const uuid = makeIdWithLength(20);
-// console.log(uuid);
-
-//
 const ADD_BOOK = 'bookstore/books/ADD_BOOK';
 const DELETE_BOOK = 'bookstore/books/DELETE_BOOK';
 
-const initialState = [];
+const initialState = [
+  {
+    title: 'The Book Title One', author: 'Author One', category: 'Art and Style', id: uuidv4(),
+  },
+  {
+    title: 'The Book Title Two', author: 'Author Two', category: 'Science', id: uuidv4(),
+  },
+  {
+    title: 'The Book Title Three', author: 'Author Three', category: 'Fiction', id: uuidv4(),
+  },
+];
 
-export default function reducer(state = initialState, action) {
+export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
     case ADD_BOOK:
-      return [...state, action.data];
+      return [...state, action.payload];
     case DELETE_BOOK:
-      return state.filter((book) => book.id !== action.data.id);
+      return state.filter((book) => book.id !== action.id);
     default:
       return state;
   }
 }
 
-export function addBook(title = '', author = '') {
-  const id = uuid;
+export function addBook(book) {
+  const id = uuidv4();
   return {
     type: ADD_BOOK,
-    data: { title, author, id },
+    payload: {
+      ...book,
+      id,
+    },
   };
 }
 
