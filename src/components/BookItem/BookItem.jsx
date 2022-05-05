@@ -16,7 +16,7 @@ function BookItem(props) {
         <h6>{book.author}</h6>
         <div className="desc">
           <button type="button" className="btn">Comments</button>
-          <button onClick={() => dispatch(deleteBook(book.id))} type="button" className="btn">Remove</button>
+          <button onClick={() => dispatch(deleteBook(book.item_id))} type="button" className="btn">Remove</button>
           <button type="button" className="btn">Edit</button>
         </div>
       </div>
@@ -40,7 +40,7 @@ export default BookItem;
 
 BookItem.propTypes = {
   book: PropTypes.shape({
-    id: PropTypes.string.isRequired,
+    item_id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,

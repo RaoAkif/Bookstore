@@ -14,6 +14,9 @@ function AddBook() {
     const author = target.author.value;
     const category = target.category.value;
     dispatch(addBook({ title, author, category }));
+    target.title.value = '';
+    target.author.value = '';
+    target.category.value = '';
   };
 
   const handleCategory = (e) => {
