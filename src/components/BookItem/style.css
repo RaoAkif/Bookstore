@@ -148,7 +148,7 @@ div.percentage > p {
 .btn {
   border: none;
   background-color: inherit;
-  padding: 0 100px 0 0;
+  padding: 0 60px 0 0;
   font-size: 16px;
   cursor: pointer;
   display: inline-block;
@@ -211,4 +211,11 @@ div.percentage > p {
   z-index: 100;
   font-weight: 500;
   font-size: 0.66em;
+}
+
+.Line-2 {
+  width: 0.125rem;
+  height: 1.375rem;
+  margin: 0.8rem 1rem 0 1rem;
+  border: solid 1px #e8e8e8;
 }

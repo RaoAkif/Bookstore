@@ -16,7 +16,9 @@ function BookItem(props) {
         <h6>{book.author}</h6>
         <div className="desc">
           <button type="button" className="btn">Comments</button>
+          <div className="Line-2" />
           <button onClick={() => dispatch(deleteBook(book.item_id))} type="button" className="btn">Remove</button>
+          <div className="Line-2" />
           <button type="button" className="btn">Edit</button>
         </div>
       </div>
