@@ -71,7 +71,7 @@ input::-webkit-input-placeholder {
 }
 
 .add-book-btn {
-  font-family: RobotoSlab serif;
+  font-family: RobotoSlab, serif;
   font-size: 0.6rem;
   font-weight: bold;
   font-stretch: normal;
