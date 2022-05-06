@@ -116,6 +116,7 @@ div.percentage > p {
   justify-content: space-around;
   height: 100px;
   padding-top: 2px;
+  font-family: RobotoSlab, serif;
 }
 
 .book-status > p:nth-child(1) {
@@ -127,10 +128,6 @@ div.percentage > p {
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-}
-
-book-status > p:nth-child(2) {
-  font-family: RobotoSlab, serif;
 }
 
 .book-status > button {
@@ -171,6 +168,12 @@ book-status > p:nth-child(2) {
   clip: rect(0, 50px, 50px, 25px);
 }
 
+.mask.full,
+.circle .fill {
+  animation: fill ease-in-out 3s;
+  transform: rotate(135deg);
+}
+
 .circle-wrap .circle .mask,
 .circle-wrap .circle .fill {
   width: 50px;
@@ -201,12 +204,6 @@ book-status > p:nth-child(2) {
 .mask .fill {
   clip: rect(0, 75px, 150px, 0);
   background-color: #227ded;
-}
-
-.mask.full,
-.circle .fill {
-  animation: fill ease-in-out 3s;
-  transform: rotate(135deg);
 }
 
 @keyframes fill {
