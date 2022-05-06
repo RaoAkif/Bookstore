@@ -68,10 +68,6 @@ div > p {
   letter-spacing: normal;
 }
 
-div.percentage > p {
-  margin-left: 5px;
-}
-
 .desc > button {
   color: #4386bf;
   font-family: RobotoSlab, serif;
@@ -110,6 +106,10 @@ div.percentage > p {
   opacity: 0.5;
 }
 
+div.percentage > p {
+  margin-left: 5px;
+}
+
 .book-status {
   display: flex;
   flex-direction: column;
@@ -118,7 +118,7 @@ div.percentage > p {
   padding-top: 2px;
 }
 
-.book-status > p:first-child {
+.book-status > p:nth-child(1) {
   opacity: 0.5;
   font-family: RobotoSlab, serif;
   font-size: 0.813rem;
@@ -159,43 +159,6 @@ book-status > p:nth-child(2) {
 }
 
 .circle-wrap {
-  margin: 150px auto;
-  width: 150px;
-  height: 150px;
-  background: #fefcff;
-  border-radius: 50%;
-  border: 1px solid #cdcbd0;
-}
-
-.circle-wrap .circle .mask,
-.circle-wrap .circle .fill {
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  border-radius: 50%;
-}
-
-.circle-wrap .circle .mask {
-  clip: rect(0, 150px, 150px, 75px);
-}
-
-.circle-wrap .inside-circle {
-  width: 122px;
-  height: 122px;
-  border-radius: 50%;
-  background: #d2eaf1;
-  line-height: 120px;
-  text-align: center;
-  margin-top: 14px;
-  margin-left: 14px;
-  color: #1e51dc;
-  position: absolute;
-  z-index: 100;
-  font-weight: 700;
-  font-size: 2em;
-}
-
-.circle-wrap {
   margin: 50px auto;
   width: 50px;
   height: 50px;
@@ -204,16 +167,16 @@ book-status > p:nth-child(2) {
   border: 0.33px solid #cdcbd0;
 }
 
+.circle-wrap .circle .mask {
+  clip: rect(0, 50px, 50px, 25px);
+}
+
 .circle-wrap .circle .mask,
 .circle-wrap .circle .fill {
   width: 50px;
   height: 50px;
   position: absolute;
   border-radius: 50%;
-}
-
-.circle-wrap .circle .mask {
-  clip: rect(0, 50px, 50px, 25px);
 }
 
 .circle-wrap .inside-circle {
@@ -236,7 +199,7 @@ book-status > p:nth-child(2) {
 
 /* 3rd progress bar */
 .mask .fill {
-  clip: rect(0px, 75px, 150px, 0);
+  clip: rect(0, 75px, 150px, 0);
   background-color: #227ded;
 }
 
