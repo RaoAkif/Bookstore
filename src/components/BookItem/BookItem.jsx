@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import './style.css';
-import circularBar from '../../assets/images/circularBar.png';
+// import circularBar from '../../assets/images/circularBar.png';
 import { deleteBook } from '../../redux/books/books';
 
 function BookItem(props) {
@@ -21,9 +21,19 @@ function BookItem(props) {
         </div>
       </div>
       <div className="item-stats">
-        <img src={circularBar} alt="circular-bar" />
+        <div className="circle-wrap">
+          <div className="circle">
+            <div className="mask full">
+              <div className="fill" />
+            </div>
+            <div className="mask half">
+              <div className="fill" />
+            </div>
+            <div className="inside-circle"> 75% </div>
+          </div>
+        </div>
         <div className="percentage">
-          <h5>64%</h5>
+          {/* <h5>75%</h5> */}
           <p>Completed</p>
         </div>
       </div>

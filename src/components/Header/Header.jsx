@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './styles.css';
-import profilePic from '../../assets/images/profilePic.png';
 
 const navBarLeft = {
   display: 'flex',
@@ -31,7 +30,7 @@ function Header() {
           </ul>
         </nav>
       </div>
-      <img className="profilePic" src={profilePic} alt="" />
+      <i className="fa fa-solid fa-user" />
     </div>
   );
 }

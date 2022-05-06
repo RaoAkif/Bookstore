@@ -18,6 +18,7 @@ function Books() {
       {books.map((book) => (
         <BookItem key={book.item_id} book={book} />
       ))}
+      <div className="Line" />
       <AddBook />
     </div>
   );

@@ -27,14 +27,17 @@ function AddBook() {
     <div className="add-book">
       <h3>ADD NEW BOOK</h3>
       <form onSubmit={handleSubmit}>
-        <input type="text" name="title" id="title" placeholder="Book title" />
-        <input type="text" name="author" id="author" placeholder="Book author" />
+        <input type="text" name="title" id="title" placeholder="Book Title" />
+        <input type="text" name="author" id="author" placeholder="Book Author" />
         <select name="category" id="category" value={category} onChange={handleCategory} required>
           <option value="" defaultValue disabled>Category</option>
-          <option value="Science">Science</option>
-          <option value="Arts and Style">Arts and Style</option>
+          <option value="Arts">Arts</option>
+          <option value="Drama">Drama</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Physics">Physics</option>
+          <option value="Mathematics">Mathematics</option>
         </select>
-        <button type="submit">ADD BOOK</button>
+        <button className="add-book-btn" type="submit">ADD BOOK</button>
       </form>
     </div>
   );
