@@ -24,19 +24,28 @@ cd Bookstore
 npm i
 ```
 
-### `npm start`
-Runs the app in the development mode.\
+### Run App Locally
+```
+npm start
+```
+OR
+```
+yarn start
+```
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### ```npm test```
+### Run Tests
 ```
 npm test
 ```
 
-### Create the Build Folder
+### Create Build
 ```
 npm run build
 ```
+
+### Deployment
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/RaoAkif/Bookstore)
 
 ## Authors
 
