@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './styles.css';
-import profilePic from '../../assets/images/profilePic.png';
 
 const navBarLeft = {
   display: 'flex',
@@ -18,20 +17,20 @@ const navLinks = {
 function Header() {
   return (
     <div className="header">
-      <div style={navBarLeft}>
+      <div className="nav-bar-left" style={navBarLeft}>
         <h2 className="logo">Bookstore CMS</h2>
         <nav>
           <ul style={navLinks}>
             <li>
-              <Link className="navLink" to="/">Books</Link>
+              <Link className="navLink" to="/">BOOKS</Link>
             </li>
             <li>
-              <Link className="navLink" to="/categories">Categories</Link>
+              <Link className="navLink" to="/categories">CATEGORIES</Link>
             </li>
           </ul>
         </nav>
       </div>
-      <img className="profilePic" src={profilePic} alt="" />
+      <i className="fa fa-solid fa-user" />
     </div>
   );
 }
