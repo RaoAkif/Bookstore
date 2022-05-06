@@ -18,7 +18,6 @@
 .book-details > button {
   height: 2rem;
   padding: 10px 7px 10px 7px;
-  /* font-family: Roboto Slab Light; */
 }
 
 .desc {
@@ -49,7 +48,7 @@ div > p {
   color: black;
   padding-top: 4px;
   padding-bottom: 4px;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab sans-serif;
   font-size: 1.375rem;
   font-weight: bold;
   font-stretch: normal;
@@ -60,7 +59,7 @@ div > p {
 
 .book-details > h6 {
   color: #4386bf;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -75,7 +74,7 @@ div.percentage > p {
 
 .desc > button {
   color: #4386bf;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -121,7 +120,7 @@ div.percentage > p {
 
 .book-status > p:first-child {
   opacity: 0.5;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab sans-serif;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;
@@ -135,7 +134,7 @@ div.percentage > p {
   color: white;
   width: 10rem;
   height: 1.7rem;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab sans-serif;
   font-size: 0.8rem;
   font-weight: 300;
   font-stretch: normal;
