@@ -164,6 +164,21 @@ div.percentage > p {
   border: 0.33px solid #cdcbd0;
 }
 
+.mask .fill {
+  clip: rect(0, 75px, 150px, 0);
+  background-color: #227ded;
+}
+
+@keyframes fill {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  100% {
+    transform: rotate(135deg);
+  }
+}
+
 .circle-wrap .circle .mask {
   clip: rect(0, 50px, 50px, 25px);
 }
@@ -196,21 +211,4 @@ div.percentage > p {
   z-index: 100;
   font-weight: 500;
   font-size: 0.66em;
-}
-
-/* color animation */
-
-/* 3rd progress bar */
-.mask .fill {
-  clip: rect(0, 75px, 150px, 0);
-  background-color: #227ded;
-}
-
-@keyframes fill {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(135deg);
-  }
 }
