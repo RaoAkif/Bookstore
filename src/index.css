@@ -10,10 +10,16 @@
 body {
   background-color: rgba(0, 0, 0, 0.05);
   margin: 0;
-  font-family: "Times New Roman", Times, serif;
+  font-family:
+    "Times New Roman",
+    Times, serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family:
+    source-code-pro,
+    Menlo, Monaco,
+    Consolas,
+    "Courier New",
     monospace;
 }

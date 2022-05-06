@@ -1,6 +1,5 @@
 .logo {
   color: #0290ff;
-  font-family: Montserrat;
   font-size: 1.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -9,11 +8,14 @@
   letter-spacing: normal;
 }
 
+.nav-bar-left {
+  padding-left: 10%;
+}
+
 .navLink {
   text-decoration: none;
   color: black;
   padding: 5px 2.563rem;
-  font-family: Montserrat;
   font-size: 0.813rem;
   font-weight: normal;
   font-stretch: normal;
