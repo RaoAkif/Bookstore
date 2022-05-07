@@ -8,10 +8,6 @@
   letter-spacing: normal;
 }
 
-.nav-bar-left {
-  padding-left: 10%;
-}
-
 .navLink {
   text-decoration: none;
   color: black;
@@ -22,6 +18,37 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: 1.9px;
+}
+
+.nav-bar-left {
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  .navLink {
+    text-decoration: none;
+    color: black;
+    padding: 3px 1.563rem;
+    font-size: 0.5rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.9px;
+  }  
+  .nav-bar-left {
+    padding-left: 40px;
+  }
 }
 
 i.fa {
@@ -39,6 +66,6 @@ i.fa {
   height: 5.938rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between ;
   margin-bottom: 1rem;
 }
