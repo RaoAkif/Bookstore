@@ -231,8 +231,8 @@ div.percentage > p {
     background-color: white;
     padding: 1rem;
     border-radius: 4px;
-    box-shadow: grey;
   }
+
   .book-basic-desc {
     display: flex;
     align-items: center;
@@ -240,15 +240,19 @@ div.percentage > p {
     width: 325%;
     margin: 5px;
   }
+
   .book-basic-desc > * {
     margin: 0.5rem;
   }
+
   .desc {
     margin: auto;
   }
+
   .item-stats {
     margin: auto;
   }
+
   .book-status {
     align-items: center;
     margin-top: 5px;

@@ -85,19 +85,25 @@ input::-webkit-input-placeholder {
   h3 {
     margin: auto;
   }
+
   form {
     display: flex;
     flex-direction: column;
   }
+
   form > * {
     margin: 0.5rem 0;
   }
-  form > #title, #author, #category {
+
+  form > #title,
+  #author,
+  #category {
     width: 18rem;
     border: grey;
     border-radius: 4px;
     padding: 0.7rem 1rem;
   }
+
   .add-book-btn {
     width: 10rem;
     font-size: 1rem;
