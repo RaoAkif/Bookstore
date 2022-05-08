@@ -2,6 +2,8 @@
 
 > This is a simple Bookstore application, that uses React Framework, that is a Single Page Application (SPA) as React Router, and Redux Library for State Management.
 
+![Bookstore CMS](https://user-images.githubusercontent.com/61361037/167278103-9d0a7698-a551-442d-89ea-e156fd9763bb.PNG)
+
 
 ## Get Started
  * [Netlify Live](https://bookstore-raoakif.netlify.app/)
