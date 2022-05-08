@@ -2,12 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './styles.css';
 
-const navBarLeft = {
-  display: 'flex',
-  alignItems: 'center',
-  paddingLeft: '6.25rem',
-};
-
 const navLinks = {
   listStyle: 'none',
   display: 'flex',
@@ -17,7 +11,7 @@ const navLinks = {
 function Header() {
   return (
     <div className="header">
-      <div className="nav-bar-left" style={navBarLeft}>
+      <div className="nav-bar-left">
         <h2 className="logo">Bookstore CMS</h2>
         <nav>
           <ul style={navLinks}>

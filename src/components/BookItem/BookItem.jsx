@@ -11,9 +11,11 @@ function BookItem(props) {
   return (
     <div className="item">
       <div className="book-details">
-        <h5>{book.category}</h5>
-        <h3>{book.title}</h3>
-        <h6>{book.author}</h6>
+        <span className="book-basic-desc">
+          <h5>{book.category}</h5>
+          <h3>{book.title}</h3>
+          <h6>{book.author}</h6>
+        </span>
         <div className="desc">
           <button type="button" className="btn">Comments</button>
           <div className="Line-2" />
